@@ -29,3 +29,5 @@ console.log(a > b && 5 <= b);
 
 // verificar se b é  par ou impar usando termario
 resultado = b % 2 == 0 ? "Par" : "Impar";
+
+
