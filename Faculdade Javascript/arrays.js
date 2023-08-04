@@ -38,3 +38,24 @@ var pais = ["Brasil", "Argentina", "Colombia"];
 pais.unshift("Uruguai");
 console.log(pais);
 
+
+
+var nomes = ["Guilherme","Manuel", "Samuel","Davi","João"];
+var novos = nomes.splice(4,4,"mônica","Emanuel");
+
+console.log(nomes);
+
+
+
+var pessoa = ["Eduardo","joanna", "Wallace", "Rosana"];
+var gerente = ["Davi", "Manuela"];
+
+var pessoas1 = pessoa.slice(1,3);
+
+
+console.log(pessoa);
+console.log(pessoas1);
+
+
+var empresa = pessoa.concat(gerente);
+console.log(empresa);
