@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de DOM</title>
+<style>
+    div.quadrado {
+        display: inline-block;
+border: 1px solid black;
+border-radius: 10px;
+background-color: green;
+width: 200px;
+height: 200px;
+    }
+
+</style>
+</head>
+<body>
+    <div class="quadrado" id="q1">interagindo</div>
+    <div class="quadrado" id="q2">interagindo</div>
+    <div class="quadrado" id="q3">interagindo</div>
+    <script>
+        var a = window.document.getElementsByClassName('quadrado')
+        a.addEventListener('click' , clicar)
+        a.addEventListener('mouseebter' , entrar)
+        a.addEventListener('mouseout' , sair)
+
+        function clicar () {
+            a.innerText = 'clicou!'
+            a.style.background = 'red'
+        }
+        function entrar () {
+            a.innerText = 'entrou!'
+        }
+function sair () {
+    a.innerText = 'saiu!'
+    a.style.background = 'green'
+}
+    </script>
+</body>
+</html>
