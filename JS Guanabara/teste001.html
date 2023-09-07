@@ -1,42 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste de DOM</title>
-<style>
-    div.quadrado {
-        display: inline-block;
-border: 1px solid black;
-border-radius: 10px;
-background-color: green;
-width: 200px;
-height: 200px;
-    }
+    <style>
+        div.quadrado {
+            display: inline-block;
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: green;
+            width: 200px;
+            height: 200px;
 
-</style>
+
+        }
+    </style>
 </head>
+
 <body>
     <div class="quadrado" id="q1">interagindo</div>
     <div class="quadrado" id="q2">interagindo</div>
     <div class="quadrado" id="q3">interagindo</div>
     <script>
-        var a = window.document.getElementsByClassName('quadrado')
-        a.addEventListener('click' , clicar)
-        a.addEventListener('mouseebter' , entrar)
-        a.addEventListener('mouseout' , sair)
+        var a = document.getElementById('q1')
+        var b = document.getElementById('q2')
+        var c = document.getElementById('q3')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
 
-        function clicar () {
+        function clicar() {
             a.innerText = 'clicou!'
             a.style.background = 'red'
         }
-        function entrar () {
+        function entrar() {
             a.innerText = 'entrou!'
+            a.styke.background = 'blue'
         }
-function sair () {
-    a.innerText = 'saiu!'
-    a.style.background = 'green'
-}
+        function sair() {
+            a.innerText = 'saiu!'
+            a.style.background = 'black'
+        }
+
+
+
+        b.addEventListener('click', clic)
+        b.addEventListener('mouseenter', entr)
+        b.addEventListener('mouseout', sai)
+
+        function clic() {
+            b.innerText = 'clicou!'
+            b.style.background = 'red'
+        }
+        function entr() {
+            b.innerText = 'entrou!'
+            b.style.background = 'white'
+        }
+        function sai() {
+            b.innerText = 'saiu!'
+            b.style.background = 'red'
+        }
+
+        c.addEventListener('click', c)
+        c.addEventListener('mouseenter', e)
+        c.addEventListener('mouseout', s)
+
+        function c() {
+            c.innerText = 'clicou!'
+            c.style.background = 'red'
+        }
+        function e() {
+            c.innerText = 'entrou!'
+            c.style.background = 'blue'
+        }
+        function s() {
+            c.innerText = 'saiu!'
+            c.style.background = 'white'
+        }
+
     </script>
 </body>
+
 </html>
