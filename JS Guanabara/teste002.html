@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste condições</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    Qual país você mora: <input type=""
+    name="txtpaís" id="txtpaís">
+    <input type="button" value="verificar" onclick="resuldaods()">
+    <div id="na">
+
+    </div>
+    <script>
+        function resultados () {
+           var  txtp = document.querySelector('input#txtpaís')
+            var na = document.querySelector('div#na')
+            na.innerHTML = ` Você mora em ${pais}`
+        }
+    </script>
+</body>
+</html>
