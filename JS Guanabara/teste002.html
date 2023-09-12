@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste condições</title>
 </head>
+
 <body>
     <h1>Nacionalidade</h1>
-    Qual país você mora: <input type=""
-    name="txtpaís" id="txtpaís">
-    <input type="button" value="verificar" onclick="resuldaods()">
+    Qual país você vive: <input type="text" name="txtpaís" id="txtpaís">
+    <input type="button" value="verificar" onclick="resultado()">
     <div id="na">
 
     </div>
     <script>
-        function resultados () {
-           var  txtp = document.querySelector('input#txtpaís')
+        function resultado() {
+            var txtpaís = document.querySelector('input#txtpaís')
             var na = document.querySelector('div#na')
-            na.innerHTML = ` Você mora em ${pais}`
+            var país = txtpaís.value
+            na.innerHTML = `<p>Você mora no <strong>${país}</strong></p>`
+            if (país == 'brasil'){
+                na.innerHTML = `<p> Você é <strong>Brasileiro</strong> </p>`
+            } else {
+                `<p>Você é <strong>estrangeiro</strong> `
+            }
+        
         }
     </script>
 </body>
+
 </html>
