@@ -5,13 +5,13 @@ var data = new Date()
 var hora = data.getHours()
 msg.innerHTML = `Agora são ${hora} Horas!`
 if (hora >= 0 && hora < 12) {   
-        img.src = 'fotomanha01.jpg' 
+        img.scr = 'fotomanha01.jpg' 
         document.body.style.background = '#F2B872'
-} else if (hora >= 12 && hora < 18) {
-   img.src = 'fototarde01.jpg'
+} else if (hora >= 12 && hora <= 18) {
+   img.scr = 'fototarde01.jpg'
    document.body.style.background = '#F2762E'
 } else {
-   img.src = 'fotonoite01.jpg'
+   img.scr = 'fotonoite.jpg'
    document.body.style.background = '#F71B14'
 }
 }
